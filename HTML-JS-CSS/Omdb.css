@@ -1,9 +1,9 @@
 body{
-    background-image: url("fondo.jpg");
+    background-image: url("../IMG/fondo.jpg");
 }
 
 .modal-content{
-    background-image: url("fondo.jpg");
+    background-image: url("../IMG/fondo.jpg");
 }
 
 p,h5,.close{
@@ -67,8 +67,8 @@ img{
   
   /* Change navbar styling on scroll */
   .navbar.active {
-    background: #fff;
-    opacity: 0.4;
+    background: #041526;
+    opacity: 0.5;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
   }
   

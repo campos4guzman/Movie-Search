@@ -2,6 +2,7 @@ var pagina=1;
 var blockScroll=false;
 var from=0;
 var bus="";
+var cont=0;
 
 //Click on the search button
 $("document").ready( function(){
@@ -54,6 +55,7 @@ $(function(){
 
 //Principal functions
 function secondSearchB(){
+        cont++;
         pagina=1;
         from=$("#from").val();
         bus=$("#bus").val();
@@ -63,6 +65,8 @@ function secondSearchB(){
         else{
                 var link="http://www.omdbapi.com/?s="+bus+"&page="+pagina+"&y="+from+"&apikey=eb9052e";
         }
+        localStorage.setItem("busqueda"+cont, bus);
+        localStorage.setItem("from"+cont, from);
         $("#peliculas").empty();
         getPelis(link);
 }
@@ -152,6 +156,7 @@ function setPortada(portada,titulo,id){
         );
         $("#peliculas").append(divjose);
 }
+
 
 
 
