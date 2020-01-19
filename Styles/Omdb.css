@@ -1,9 +1,9 @@
 body{
-    background-image: url("../IMG/fondo.jpg");
+    background-image: url("../Images/fondo.jpg");
 }
 
 .modal-content{
-    background-image: url("../IMG/fondo.jpg");
+    background-image: url("../Images/fondo.jpg");
 }
 
 p,h5,.close{
