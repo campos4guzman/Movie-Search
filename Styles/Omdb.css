@@ -7,6 +7,11 @@ p,h5,.close{
   color:white;
 }
 
+.card{
+  background-color:transparent;
+  border:transparent;
+}
+
 hr{
   border: 2px solid white;
   border-radius: 5px;
