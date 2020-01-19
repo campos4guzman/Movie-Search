@@ -150,7 +150,7 @@ function setDetalle(titulo,an,puntuacion,director,gen,actores,portada,plot){
 }
 
 function setPortada(portada,titulo,id){
-        divjose=$('<div class="col-lg-3 col-sm-4 text-center card"> id="card"');
+        divjose=$('<div class="col-lg-3 col-sm-4 text-center card">');
         divjose.attr(id);
         divjose.click(function(){
                 $.getJSON("https://www.omdbapi.com/?i="+id+"&apikey=eb9052e").done(function(datos){
