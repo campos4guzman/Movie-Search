@@ -32,7 +32,13 @@ $(document).ready(function(){
 				scrollTop: 0
 			},400);
 			return false;
-		});
+                });
+                $('#logo').click(function () {
+                        $('body,html').animate({
+				scrollTop: 0
+			},400);
+			return false;
+                });
 });
 
 
