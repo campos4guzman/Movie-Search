@@ -7,8 +7,9 @@ Web application movie search engine.
 
 ## Use of the components:
 
-* It consists of an input field as a search engine and another to be able to filter it by the date of 
+* It consists of an input field as a search engine with a button and another to be able to filter it by the date of 
 departure of the movie or series (It is not necessary if you do not want to filter by date, just do not fill in that field)
+* Click on the button to search or press Enter on the input for entrance of films
 * Also when scrolling you can continue to visualize your search above in an attenuated tone
 * It also contains a button on the bottom right to return to the top of the page (if you click on the gif of the millennium falcon (logo) you will get the same result)
 
