@@ -1,3 +1,4 @@
+//Global Variables
 var pagina=1;
 var blockScroll=false;
 var from=0;
@@ -8,17 +9,20 @@ var cont=0;
 $("document").ready( function(){
         $("#boton").click(secondSearchB);
 });
+
+//Enter on the search button
 $("#bus").keypress(function(e) {
         if(e.which==13) {
            secondSearchB();
         }
 });
 
+//Back To Top Button
 $(document).ready(function(){
 	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
 				$('#backbt').fadeIn();
-			} else {
+			}else{
 				$('#backbt').fadeOut();
 			}
 		});
@@ -26,13 +30,13 @@ $(document).ready(function(){
 		$('#backbt').click(function () {
 			$('body,html').animate({
 				scrollTop: 0
-			}, 400);
+			},400);
 			return false;
 		});
 });
 
 
-//Loading elements when the scroll
+//Loading elements when the scroll touch bottom
 $(window).scroll(function () {
         if ($(window).scrollTop() + $(window).height() > $(document).height() - 100){
                 if(blockScroll==false){

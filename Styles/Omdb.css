@@ -1,6 +1,24 @@
+/*Generals*/
 body{
-    background-image: url("../Images/fondo.jpg");
+  background-image: url("../Images/fondo.jpg");
 }
+
+p,h5,.close{
+  color:white;
+}
+
+hr{
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+img{
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+}
+/**/
 
 #logo{
   width: 10%; 
@@ -8,35 +26,19 @@ body{
 }
 
 .modal-content{
-    background-image: url("../Images/fondo.jpg");
-}
-
-p,h5,.close{
-    color: white;
-}
-
-hr{
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-img{
-    object-fit: cover;
-    width: 90%;
-    height: 90%;
-    border-radius: 10px;
+  background-image: url("../Images/fondo.jpg");
 }
 
 #boton{
-    background-color: #64b5f6;
-    color: white;
+  background-color: #64b5f6;
+  color: white;
 }
 
-.backbt {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
+.backbt{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }
 
 #camera-body,#reel-1,#reel-2 {
@@ -45,72 +47,42 @@ img{
 	stroke: none;
 }
 
-
-
-.navbar {
-    transition: all 0.4s;
-  }
-  
-  .navbar .nav-link {
-    color: #fff;
-  }
-  
-  .navbar .nav-link:hover,
-  .navbar .nav-link:focus {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .navbar .navbar-brand {
-    color: #fff;
-  }
-  
-  
-  /* Change navbar styling on scroll */
-  .navbar.active {
-    background: #041526;
-    opacity: 0.5;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar.active .nav-link {
-    color: #555;
-  }
-  
-  .navbar.active .nav-link:hover,
-  .navbar.active .nav-link:focus {
-    color: #555;
-    text-decoration: none;
-  }
-  
-  .navbar.active .navbar-brand {
-    color: #555;
-  }
-  
-  
-  
-
-  .star-rating {
-    direction: rtl;
-    display: inline-block;
-    padding: 20px
+/*Nav*/
+.navbar{
+  transition: all 0.4s;
 }
-
-.star-rating input[type=radio] {
-    display: none
+  
+.navbar .nav-link {
+  color: #fff;
 }
-
-.star-rating label {
-    color: #bbb;
-    font-size: 18px;
-    padding: 0;
-    cursor: pointer;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
+  
+.navbar .nav-link:hover,.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
 }
-
-.star-rating label:hover,
-.star-rating label:hover ~ label,
-.star-rating input[type=radio]:checked ~ label {
-    color: #f2b600
+  
+.navbar .navbar-brand {
+  color: #fff;
 }
+  
+  
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #041526;
+  opacity: 0.5;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.navbar.active .nav-link {
+  color: #555;
+}
+  
+.navbar.active .nav-link:hover,.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+  
+.navbar.active .navbar-brand {
+  color: #555;
+}
+  
