@@ -8,17 +8,22 @@ var cont=0;
 $("document").ready( function(){
         $("#boton").click(secondSearchB);
 });
+$("#bus").keypress(function(e) {
+        if(e.which==13) {
+           secondSearchB();
+        }
+});
 
 $(document).ready(function(){
 	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
-				$('#back-to-top').fadeIn();
+				$('#backbt').fadeIn();
 			} else {
-				$('#back-to-top').fadeOut();
+				$('#backbt').fadeOut();
 			}
 		});
 		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
+		$('#backbt').click(function () {
 			$('body,html').animate({
 				scrollTop: 0
 			}, 400);
@@ -118,10 +123,10 @@ function setDetalle(titulo,an,puntuacion,director,gen,actores,portada,plot){
         $(".modal-body").empty();
         $(".modal-body").append(
                 "<div class='row'>"+
-                        "<div class='col-md-5'>"+   
+                        "<div class='col-lg-5 col-sm-12 col-12'>"+   
                                 '<img src='+portada+'height:100px width:100px class="img-fluid">'+
-                        "</div>"+
-                        "<div class='col-md-6'>"+   
+                        "</div>&nbsp;&nbsp;&nbsp;"+
+                        "<div class='col-lg-6 col-sm-12 col-12'>"+   
                                 "<p>Release: "+an+"</p>"+
                                 "<p>Genre: "+gen+"</p>"+
                                 '<p>imdbRating: '+puntuacion+'/10</p>'+
@@ -135,7 +140,7 @@ function setDetalle(titulo,an,puntuacion,director,gen,actores,portada,plot){
 }
 
 function setPortada(portada,titulo,id){
-        divjose=$('<div class="col-md-3 text-center">');
+        divjose=$('<div class="col-lg-3 col-sm-4 text-center">');
         divjose.attr(id);
         divjose.click(function(){
                 $.getJSON("https://www.omdbapi.com/?i="+id+"&apikey=eb9052e").done(function(datos){

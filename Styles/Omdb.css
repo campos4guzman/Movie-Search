@@ -2,6 +2,11 @@ body{
     background-image: url("../Images/fondo.jpg");
 }
 
+#logo{
+  width: 10%; 
+  height: 10%;
+}
+
 .modal-content{
     background-image: url("../Images/fondo.jpg");
 }
@@ -27,22 +32,18 @@ img{
     color: white;
 }
 
-.back-to-top {
+.backbt {
     position: fixed;
     bottom: 25px;
     right: 25px;
     display: none;
 }
 
-#camera-body,
-#reel-1,
-#reel-2 {
+#camera-body,#reel-1,#reel-2 {
 	fill: #fff;
 	fill-opacity: 0.95;
 	stroke: none;
 }
-
-
 
 
 
