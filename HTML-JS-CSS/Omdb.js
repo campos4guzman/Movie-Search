@@ -60,10 +60,10 @@ function secondSearchB(){
         from=$("#from").val();
         bus=$("#bus").val();
         if(from==""){
-                var link="http://www.omdbapi.com/?s="+bus+"&page="+pagina+"&apikey=eb9052e";
+                var link="https://www.omdbapi.com/?s="+bus+"&page="+pagina+"&apikey=eb9052e";
         }
         else{
-                var link="http://www.omdbapi.com/?s="+bus+"&page="+pagina+"&y="+from+"&apikey=eb9052e";
+                var link="https://www.omdbapi.com/?s="+bus+"&page="+pagina+"&y="+from+"&apikey=eb9052e";
         }
         localStorage.setItem("busqueda"+cont, bus);
         localStorage.setItem("from"+cont, from);
@@ -75,10 +75,10 @@ function secondSearchS(){
         from=$("#from").val();
         bus=$("#bus").val();
         if(from==""){
-                var link="http://www.omdbapi.com/?s="+bus+"&page="+pagina+"&apikey=eb9052e";
+                var link="https://www.omdbapi.com/?s="+bus+"&page="+pagina+"&apikey=eb9052e";
         }
         else{
-                var link="http://www.omdbapi.com/?s="+bus+"&page="+pagina+"&y="+from+"&apikey=eb9052e";
+                var link="https://www.omdbapi.com/?s="+bus+"&page="+pagina+"&y="+from+"&apikey=eb9052e";
         }
         getPelis(link);
 }
@@ -138,7 +138,7 @@ function setPortada(portada,titulo,id){
         divjose=$('<div class="col-md-3 text-center">');
         divjose.attr(id);
         divjose.click(function(){
-                $.getJSON("http://www.omdbapi.com/?i="+id+"&apikey=eb9052e").done(function(datos){
+                $.getJSON("https://www.omdbapi.com/?i="+id+"&apikey=eb9052e").done(function(datos){
                         var titulo=datos["Title"];
                         var portada=datos["Poster"];
                         var an=datos["Released"];
